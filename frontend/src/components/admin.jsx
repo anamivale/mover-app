@@ -10,9 +10,9 @@ function Admin() {
         <li>Trucks</li>
       </div>
       <div className="interface">
-        <div className="users"></div>
-        <div className="orders"></div>
-        <div className="trucks"></div>
+        <div className="users">users</div>
+        <div className="orders">orders</div>
+        <div className="trucks">trucks</div>
       </div>
     </div>
   )
