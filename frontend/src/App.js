@@ -4,7 +4,7 @@ import React from "react"
 // import About from "./components/About"
 // import Login from "./components/Login"
 // import Contact from "./components/Contact"
-import Admin from "./components/admin"
+import Map from "./components/map"
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route exact path="/Contact" element={<Contact />} />
         </Routes>
       </BrowserRouter> */}
-      <Admin />
+      <Map />
     </div>
   )
 }
