@@ -1,13 +1,13 @@
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: blue;
     color: white;
+    color: blueviolet;
 }
 .link{
     margin-left: 10px;
     text-decoration: none;
-    color: white;
+    color: blue;
 }
 h1{
     font-size: 20px;
@@ -17,4 +17,20 @@ h1{
 body{
     box-sizing: border-box;
     /* background-color: black; */
+}
+.about{
+    margin-top: 20px;
+    width: 100vw;
+    text-align: center;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+}
+.img{
+    background-image: url('../images/truck1.png');
+    background-position: center;
+    background-size: cover;
+    width: 70vw;
+    height: 70vh;
 }
