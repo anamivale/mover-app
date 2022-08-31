@@ -1,4 +1,5 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 import "../css/login.css"
 
 function Login() {
@@ -14,7 +15,9 @@ function Login() {
         <input type="password" id="" />
         <br />
         <div className="btn-login">
-          <button>Login</button>
+          <NavLink to="/package" className="link">
+            <button>Login</button>
+          </NavLink>
         </div>
         <p>
           Don't have an account yet? <a href="#">register here</a>

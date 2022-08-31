@@ -1,0 +1,18 @@
+.packages{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.pkg1{
+}
+.pkg2{
+    max-width: 100%;
+    max-height: 100%;
+}
+.body{
+    width: 100vw;
+    max-width: 100%;
+}
+img{
+    height: 300px;
+}
