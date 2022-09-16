@@ -5,6 +5,12 @@ import Login from "./components/Login"
 import Order from "./components/Order"
 import Package from "./components/package"
 // import SimpleMap from "./components/map"
+import decode from "jwt-decode"
+let userLogin
+if (token) {
+  const jwt = localStorage.getItem("token")
+  const token = decode(jwt)
+}
 
 function App() {
   return (
