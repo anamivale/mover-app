@@ -1,6 +1,6 @@
 import React from "react"
 
-function Order() {
+function Order(props) {
   return (
     <div>
       <h1>Complete Your Order</h1>
@@ -16,9 +16,6 @@ function Order() {
         <br />
         <button>submit</button>
       </form>
-      <div>
-        <map name=""></map>
-      </div>
     </div>
   )
 }
