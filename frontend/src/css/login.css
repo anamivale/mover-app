@@ -5,15 +5,16 @@
     max-height: 100%;
     align-items: center;
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
 }
-.login .form{
-height: 200px;
-width: 200px;
-background-color: rgb(92, 92, 133);
-padding: 20px;
-border-radius: 10px;
-color: white;
+    .login .form{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(92, 92, 133);
+    padding: 100px;
+    border-radius: 10px;
+    color: white;
 }
 .form button{
     margin-top: 10px;
@@ -24,12 +25,16 @@ color: white;
     
 }
 .form input{
-    padding: 3px;
+    padding: 3px 10px ;
     border-radius: 10px;
     outline: none;
     border: none;
+    margin: 0 0 15px 0;
 }
 .btn-login{
     display: flex;
     justify-content: center;
+}
+.form label{
+    margin-left: 15px;
 }

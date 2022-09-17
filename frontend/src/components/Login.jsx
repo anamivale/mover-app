@@ -8,19 +8,19 @@ function Login() {
       <form className="form">
         <label htmlFor="email">Email</label>
         <br />
-        <input type="email" id="" />
+        <input type="email" id="email" />
         <br />
         <label htmlFor="password">Password</label>
         <br />
-        <input type="password" id="" />
+        <input type="password" id="password" />
         <br />
         <div className="btn-login">
-          <NavLink to="/package" className="link">
+          <NavLink to="/" className="link">
             <button>Login</button>
           </NavLink>
         </div>
         <p>
-          Don't have an account yet? <a href="#">register here</a>
+          Don't have an account yet? <NavLink to="/order"> Signup</NavLink>
         </p>
       </form>
     </div>

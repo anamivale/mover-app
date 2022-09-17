@@ -3,6 +3,7 @@ nav{
     justify-content: space-between;
     color: white;
     color: blueviolet;
+    width: 97vw;
 }
 .link{
     margin-left: 10px;
@@ -16,6 +17,11 @@ h1{
 }
 body{
     box-sizing: border-box;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    border: 0;
+    padding: 10px;
     /* background-color: black; */
 }
 .about{
@@ -31,6 +37,39 @@ body{
     background-image: url('../images/truck1.png');
     background-position: center;
     background-size: cover;
-    width: 70vw;
+    width: 50vw;
     height: 70vh;
+    margin: 10px 50px 10px 200px;
+}
+p{
+    font-size: 15px;
+
+}
+.service{
+    display: flex;
+}
+.pkg2{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img{
+    height: 300px;
+}
+@media only screen and (max-width: 700px) {
+    .img{
+        height: 60vh;
+        
+    }
+    p{
+        font-size: 20px;
+        font-stretch: ultra-expanded;
+    }
+
+    .service img{
+        max-width: 40vw;
+        height: 40vh;
+    }
+   
+    
 }
