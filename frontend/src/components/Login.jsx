@@ -20,7 +20,7 @@ function Login() {
           </NavLink>
         </div>
         <p>
-          Don't have an account yet? <NavLink to="/order"> Signup</NavLink>
+          Don't have an account yet? <NavLink to="/login"> Signup</NavLink>
         </p>
       </form>
     </div>
