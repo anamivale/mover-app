@@ -1,0 +1,9 @@
+Post http://localhost:4002/user
+Content-Type: application/json
+
+{
+   "name":"muhembele",
+   "password":"1234",
+   "email":"muhembele@gmail.com",
+   "contact":"0797936562" 
+}
