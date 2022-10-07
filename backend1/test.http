@@ -1,0 +1,12 @@
+POST    http://localhost:4002/order
+Content-Type: application/json
+
+{
+    "name":"prudence anami",
+    "contact":"038585",
+    "email":"muhembele@gmail.com",
+    "From":"bffn",
+    "To":"kffk",
+    "typeOfOder":"3"
+
+}
