@@ -6,13 +6,13 @@ function Home() {
   return (
     <div>
       <nav>
-        <div>
+        <div className="ggg">
           <h1>Easy Moving</h1>
         </div>
         <div>
-          <NavLink to="/login" className="link">
+          {/* <NavLink to="/login" className="link">
             Login
-          </NavLink>
+          </NavLink> */}
           <a href="#about" className="link">
             About
           </a>

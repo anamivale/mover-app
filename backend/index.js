@@ -5,6 +5,7 @@ const app = express()
 const cors = require("cors")
 const { json } = require("body-parser")
 const Users = require("./routes/user")
+const Order = require("./routes/order")
 
 app.use(json())
 app.use(cors())
@@ -16,7 +17,7 @@ mongo.connect(process.env.url, () => {
 
 const port = process.env.port
 
-// app.use("/", Users)
+app.use("/", Order)
 app.use("/", Users)
 
 app.listen(port, () => {

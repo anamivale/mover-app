@@ -1,9 +1,12 @@
-Post http://localhost:4002/user
+POST    http://localhost:4002/order
 Content-Type: application/json
 
 {
-   "name":"muhembele",
-   "password":"1234",
-   "email":"muhesh@gmail.com",
-   "contact":"0797936562" 
+    "name":"prudence anami",
+    "contact":"038585",
+    "email":"muhembele@gmail.com",
+    "From":"bffn",
+    "To":"kffk",
+    "typeOfOder":"3"
+
 }

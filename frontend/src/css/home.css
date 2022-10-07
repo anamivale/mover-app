@@ -1,6 +1,6 @@
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: white;
     color: blueviolet;
     width: 97vw;
@@ -14,6 +14,9 @@ h1{
     font-size: 20px;
     margin-top: 0;
     
+}
+.ggg{
+flex: 1;
 }
 body{
     box-sizing: border-box;
