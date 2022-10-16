@@ -19,7 +19,8 @@ const port = process.env.port
 
 app.use("/", Order)
 app.use("/", Users)
+app.use("/", require("./routes/comment"))
 
 app.listen(port, () => {
-  console.log("listenning")
+  console.log("listenning ")
 })

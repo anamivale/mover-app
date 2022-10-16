@@ -1,3 +1,4 @@
+
 nav{
     display: flex;
     justify-content: center;
@@ -15,16 +16,24 @@ h1{
     margin-top: 0;
     
 }
+
+textarea{
+    height: 100px;
+    width: 200px;
+}
 .ggg{
 flex: 1;
 }
 body{
     box-sizing: border-box;
-    width: 100vw;
+    width: 90vw;
     max-width: 100%;
     margin: 0;
+    overflow-x: hidden;
     border: 0;
-    padding: 10px;
+    scroll-behavior: smooth;
+    padding: 0 10px;
+    
     /* background-color: black; */
 }
 .about{
@@ -40,9 +49,12 @@ body{
     background-image: url('../images/truck1.png');
     background-position: center;
     background-size: cover;
-    width: 50vw;
-    height: 70vh;
-    margin: 10px 50px 10px 200px;
+    width: 70vw;
+    height: 80vh;
+    margin: 10px 50px 10px 100px;
+}
+.service-title{
+    text-align: center;
 }
 p{
     font-size: 15px;
@@ -62,20 +74,89 @@ img{
 button{
     margin-left: 50px;
 }
+.slogun{
+    /* width: 100vw; */
+   /* text-align: center; */
+   font-size: xx-large;
+   font-style: italic;
+}
+.logo{
+    font-size: xx-large;
+}
+form > input{
+    margin-bottom: 10px;
+    width: 200px;
+
+}
+form{
+margin-bottom: 50px;
+padding: 20px;
+}
+.feedback{
+    width: 100vw;
+    margin-top: 20px;
+    display: block;
+
+    text-align: center;
+}
+.btn-order{
+    padding: 10px 40px;
+    margin-left: 35vw;
+    border-radius: 20px;
+}
 @media only screen and (max-width: 700px) {
-    .img{
-        height: 60vh;
+    *{
+        box-sizing: border-box;
         
     }
+    
     p{
         font-size: 20px;
         font-stretch: ultra-expanded;
     }
 
-    .service img{
-        max-width: 40vw;
-        height: 40vh;
+    
+    .slogun{
+        width: 100vw;
+        text-align: left;
+        font-size: x-large;
+       font-style: italic;
     }
-   
+    .logo{
+        font-size: x-large;
+        margin: 0;
+        padding: 0;
+    }
+    .img{
+        background-image: url('../images/truck1.png');
+       height: 300px;
+       width: 300px;
+       margin: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       border: 0;
+    }
+    .service{
+        display: block;
+        margin: 0;
+    }
+    
+    .service img{
+        max-width: 80vw;
+        height: 50vh;
+        margin: 0;
+        border: 0;
+    }
+    .contact{
+        display: block;
+    }
+    .about{
+        text-align: left;
+    }
+    .feedback{
+        text-align: left;
+    }
     
 }

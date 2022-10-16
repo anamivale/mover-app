@@ -1,12 +1,22 @@
-POST    http://localhost:4002/order
-Content-Type: application/json
+# POST   http://localhost:4002/order
+# Content-Type: application/json
 
-{
-    "name":"prudence anami",
-    "contact":"038585",
-    "email":"muhembele@gmail.com",
-    "From":"bffn",
-    "To":"kffk",
-    "typeOfOder":"3"
+# {
+#     "name":"mercy anami",
+#     "contact":"038585",
+#     "From":"bffn",
+#     "email":"mercy@gmail.com",
+#     "To":"kffk",
+#     "typeOfOder":"4"
 
-}
+# }
+GET  http://localhost:4002/comments
+
+POST  http://localhost:4002/comment
+# Content-Type: application/json
+
+# {
+#     "name":"valeria muhembele",
+#     "email":"muhembe@gmail.com",
+#     "comment":"I got no feedback on my request please. try to respond to me"
+# }

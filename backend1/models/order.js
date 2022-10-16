@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const order = mongoose.Schema(
+const Oders = mongoose.Schema(
   {
     name: {
       type: String,
@@ -10,11 +10,13 @@ const order = mongoose.Schema(
       type: String,
       required: true,
     },
-    email: {
-      type: String,
-    },
     From: {
       type: String,
+      required: true,
+    },
+    email: {
+      type: String,
+      unique: true,
       required: true,
     },
     To: {
@@ -26,7 +28,7 @@ const order = mongoose.Schema(
       required: true,
     },
   },
-  { timestamp: true }
+  { timestamps: true }
 )
 
-module.exports = mongoose.model("order", order)
+module.exports = mongoose.model("oder", Oders)

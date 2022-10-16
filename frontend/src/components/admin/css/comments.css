@@ -1,0 +1,28 @@
+.comments{
+    width: 90vw;
+    height: 100vh;
+    border: 0;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+span{
+font-size: small;}
+p{
+    margin: 0;
+    border: 0;
+}
+.comment{
+    margin: 20px 0 20px 0;
+    border: 1px solid rgb(156, 155, 155);
+    overflow-y: scroll;
+    height: 80px;
+    width: 80vw;
+}
+.comments-name{
+    margin-top: 0;
+    text-align: left;
+    margin-right: 5px;
+    border: 0;
+    font-size: xx-large;
+}
