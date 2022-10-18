@@ -22,8 +22,12 @@ function Login() {
     }
 
     try {
-      axios.post("http://localhost:4002/", confi, user).then(() => {})
-    } catch (error) {}
+      axios.post("http://localhost:4002/login", confi, user).then(() => {
+        console.log(user)
+      })
+    } catch (error) {
+      console.log(error.message)
+    }
   }
 
   return (
