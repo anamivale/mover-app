@@ -10,9 +10,9 @@
 #     "typeOfOder":"4"
 
 # }
-GET  http://localhost:4002/comments
+# GET  http://localhost:4002/comments
 
-POST  http://localhost:4002/comment
+# POST  http://localhost:4002/comment
 # Content-Type: application/json
 
 # {

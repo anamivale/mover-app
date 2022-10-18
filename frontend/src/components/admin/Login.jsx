@@ -2,10 +2,13 @@ import React from "react"
 import { useState } from "react"
 import axios from "axios"
 import "./css//login.css"
+import { useNavigate } from "react-router-dom"
 
 function Login() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const navigate = useNavigate()
+
   const handleEmail = (e) => {
     setEmail(e.target.value)
   }
@@ -14,15 +17,17 @@ function Login() {
   }
   const handleSubmit = (e) => {
     e.preventDefault()
-    const user = { email, password }
-    const confi = {
-      header: {
-        "content-type": "application/json",
-      },
-    }
 
     try {
-      axios.post("http://localhost:4002/login", confi, user).then(() => {
+      const user = { email, password }
+      const config = {
+        header: {
+          "content-type": "application/json",
+        },
+      }
+      axios.post("http://localhost:4002/login", user, config).then((res) => {
+        console.log(res.data)
+        navigate("/admin")
         console.log(user)
       })
     } catch (error) {

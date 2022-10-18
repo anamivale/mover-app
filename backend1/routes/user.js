@@ -31,7 +31,7 @@ router.post("/login", async (req, res) => {
 
   try {
     const user = await User.findOne({ email: email })
-    if (!user) throw new Error("user not found")
+    if (!user) throw new Error("user no found")
     const pwd = await bcrypt.compare(password, user.password)
     if (!pwd) throw new Error("wrong password")
     const token = jwt.sign(

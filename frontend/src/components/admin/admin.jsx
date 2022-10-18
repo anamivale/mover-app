@@ -5,21 +5,24 @@ import Comments from "./comments"
 
 function Admin() {
   return (
-    <div>
-      <h1>Admin Interface</h1>
-      {/* <div className="sidebar">
-        <li>User</li>
-        <li>Order</li>
-        <li>Trucks</li>
-      </div> */}
-      <div className="interface">
-        <div className="orders">
-          <h1 className="order-title">Orders</h1>
-          <Orders />
+    <div className="Admin">
+      <h1 className="admin-title">Admin Interface</h1>
+      <div className="wrapper">
+        <div className="sidebar">
+          <li>User</li>
+          <li>Order</li>
+          <li>Trucks</li>
         </div>
-        <div className="trucks">Trucks</div>
-        <div className="comments">
-          <Comments />
+        <div className="interface">
+          <div className="orders">
+            <h1 className="order-title">Orders</h1>
+          </div>
+          <div className="trucks">
+            <h1>Trucks</h1>
+          </div>
+          <div className="comments">
+            <h1>Comments</h1>
+          </div>
         </div>
       </div>
     </div>

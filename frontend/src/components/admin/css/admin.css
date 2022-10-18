@@ -13,19 +13,46 @@ margin-left: 20vw;
 li{
     list-style: none;
 }
+.interface{
+    display: flex;
+    height: 300px;
+    width: calc(100vw - 230px);
+    justify-content: space-between;
+
+
+}
+.orders  {
+flex: 1;
+height: 100px;
+width: 200px;
+margin-right: 10px;
+background: blue;
+padding: 50px;}
+.trucks{
+    padding: 50px;
+    margin-right: 10px;
+    background: blue;
+    height: 100px;
+    width: 200px;
+    
+
+}
 .comments{
-    width: 300px;
-    /* background-color: brown; */
-    margin: 10px;
-    padding: 10px;
-    height: 200px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    margin-bottom: 50px;
+    padding: 50px;
+    margin-right: 10px;
+    background: blue;
+    width: 200px;
+    height: 100px;
+    
 }
 
-.order-title{
+/* .order-title{
 text-align: left;
 margin-left: 20vw;
+} */
+.admin-title{
+    text-align: center;
 }
-
+.wrapper{
+    display: flex;
+}
