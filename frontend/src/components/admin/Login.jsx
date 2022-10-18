@@ -1,7 +1,6 @@
 import React from "react"
 import { useState } from "react"
-import { NavLink } from "react-router-dom"
-import axios from ('axios')
+import axios from "axios"
 import "./css//login.css"
 
 function Login() {
@@ -16,12 +15,15 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const user = { email, password }
+    const confi = {
+      header: {
+        "content-type": "application/json",
+      },
+    }
 
-  try {
-    axios.post("http://localhost:4002/")
-  } catch (error) {
-    
-  }
+    try {
+      axios.post("http://localhost:4002/", confi, user).then(() => {})
+    } catch (error) {}
   }
 
   return (
@@ -41,9 +43,7 @@ function Login() {
         />
         <br />
         <div className="btn-login">
-          {/* <NavLink to="/admin" className="link"> */}
           <button>Login</button>
-          {/* </NavLink> */}
         </div>
       </form>
     </div>
