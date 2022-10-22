@@ -9,6 +9,7 @@ const Oders = mongoose.Schema(
     contact: {
       type: String,
       required: true,
+      minlength: 10,
     },
     From: {
       type: String,

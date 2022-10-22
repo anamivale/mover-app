@@ -20,7 +20,7 @@ function Admin() {
           <div className="trucks">
             <h1>Trucks</h1>
           </div>
-          <div className="comments">
+          <div className="admin-comments">
             <h1>Comments</h1>
           </div>
         </div>

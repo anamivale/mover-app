@@ -26,9 +26,7 @@ function Login() {
         },
       }
       axios.post("http://localhost:4002/login", user, config).then((res) => {
-        console.log(res.data)
         navigate("/admin")
-        console.log(user)
       })
     } catch (error) {
       console.log(error.message)
