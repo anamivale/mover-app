@@ -9,5 +9,5 @@
 # cd backend
 
 # nodemon
-admin interface localhost:port/ login
-create an admin from backend
+#admin interface localhost:port/ login
+#create an admin from backend
