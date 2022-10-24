@@ -8,6 +8,6 @@
 
 # cd backend
 
-# nodemon (use cmd not powershell)
+# nodemon
 admin interface localhost:port/ login
 create an admin from backend
