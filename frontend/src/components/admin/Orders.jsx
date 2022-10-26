@@ -26,9 +26,10 @@ function Orders() {
             <th>Name</th>
             <th>Contact</th>
             <th>Email</th>
-            <th>From: </th>
-            <th>To:</th>
+            <th>From </th>
+            <th>To</th>
             <th>Type Of Order</th>
+            <th>clear</th>
           </tr>
         </thead>
         <tbody>
@@ -41,6 +42,9 @@ function Orders() {
                 <td>{order.From}</td>
                 <td>{order.To}</td>
                 <td>{order.typeOfOder}</td>
+                <td>
+                  <input className="clear" type="checkbox" />
+                </td>
               </tr>
             )
           })}

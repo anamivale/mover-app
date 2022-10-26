@@ -74,6 +74,7 @@ function Order() {
         <input type="text " value={To} onChange={handeleTo} />
         <br />
         <label htmlFor="from">Type of oder </label>
+        <br />
         <select name="" id="" onChange={handelOder}>
           <option value="">choose your Order</option>
           <option>type 1- 3000/=</option>

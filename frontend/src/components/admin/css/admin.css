@@ -4,10 +4,12 @@ body{
 .sidebar{
     max-width: 100%;
     width: 200px;
-    height: 100vh;
+    color: white;
+    height: 90vh;
+    background-color: rgb(87, 87, 163);
+    margin-right: 5px;
 }
 .h1{
-    text-align: left;
 margin-left: 20vw;
 }
 li{
@@ -26,12 +28,12 @@ flex: 1;
 height: 100px;
 width: 200px;
 margin-right: 10px;
-background: blue;
+background: rgb(206, 145, 31);
 padding: 50px;}
 .trucks{
     padding: 50px;
     margin-right: 10px;
-    background: blue;
+    background: rgb(206, 145, 31);
     height: 100px;
     width: 200px;
     
@@ -40,7 +42,7 @@ padding: 50px;}
 .admin-comments{
     padding: 50px;
     margin-right: 10px;
-    background: blue;
+    background: rgb(206, 145, 31);
     width: 200px;
     height: 100px;
     
@@ -55,4 +57,23 @@ margin-left: 20vw;
 }
 .wrapper{
     display: flex;
+}
+.sidebar-users{
+    width: 100%;
+    text-align: center;
+    border: 1px solid white;
+    padding: 50px 0;
+
+}
+.sidebar-orders{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    border: 1px solid white;
+}
+.sidebar-trucks{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    border: 1px solid white;
 }
