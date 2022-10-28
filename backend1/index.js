@@ -1,4 +1,4 @@
-const mongo = require("mongoose")
+const mongoose = require("mongoose")
 const dotenv = require("dotenv")
 const express = require("express")
 const app = express()
@@ -11,7 +11,7 @@ app.use(json())
 app.use(cors())
 dotenv.config()
 
-mongo.connect(process.env.url, () => {
+mongoose.connect(process.env.url, () => {
   console.log("db connected")
 })
 
