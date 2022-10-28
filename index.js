@@ -11,7 +11,7 @@ app.use(json())
 app.use(cors())
 dotenv.config()
 
-mongoose.connect(process.env.url, () => {
+mongoose.connect(process.env.MONGODB_URI || process.env.url, () => {
   console.log("db connected")
 })
 
