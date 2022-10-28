@@ -16,6 +16,9 @@ mongoose.connect(process.env.MONGODB_URI || process.env.url, () => {
 })
 
 const port = process.env.PORT || process.env.port
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("frontend/build"))
+}
 
 app.use("/", Order)
 app.use("/", Users)
