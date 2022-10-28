@@ -15,7 +15,7 @@ mongoose.connect(process.env.url, () => {
   console.log("db connected")
 })
 
-const port = process.env.port
+const port = process.env.PORT || process.env.port
 
 app.use("/", Order)
 app.use("/", Users)
