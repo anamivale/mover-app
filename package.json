@@ -7,7 +7,7 @@
     "build":" cd frontend && npm run build",
     "install-frontend": "cd frontend && npm install",
     "heroku-postbuild":"npm install-frontend && npm run build",
-    "start": "node index.js",
+    "start": "nodemon",
     "frontend":"cd frontend && npm start"
 
   },
