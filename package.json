@@ -5,8 +5,7 @@
   "main": " index.js",
   "scripts": {
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
-    "start": "nodemon",
-    "client": "cd client && npm start"
+    "start": "node index.js"
   },
   "engines": {
     "node": "14.17.0"

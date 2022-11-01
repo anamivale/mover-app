@@ -6,6 +6,7 @@ const cors = require("cors")
 const { json } = require("body-parser")
 const Users = require("./routes/user")
 const Order = require("./routes/order")
+const path = require("path")
 
 app.use(json())
 app.use(cors())
@@ -15,9 +16,13 @@ mongoose.connect(process.env.MONGODB_URI || process.env.url, () => {
   console.log("db connected")
 })
 
-const port = process.env.PORT || process.env.port
+const port = process.env.PORT || 4002
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("frontend/build"))
+  app.use(express.static("client/build"))
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"))
+  })
 }
 
 app.use("/", Order)
