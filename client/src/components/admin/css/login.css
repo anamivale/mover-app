@@ -12,7 +12,7 @@
     height: 200px;
     width: 200px;
     background-color: rgb(92, 92, 133);
-    padding: 100px;
+    /* padding: 100px; */
     border-radius: 10px;
     color: white;
 }
@@ -25,11 +25,11 @@
     
 }
 .form input{
-    padding: 3px 10px ;
+    /* padding: 3px 10px ; */
     border-radius: 10px;
     outline: none;
     border: none;
-    margin: 0 0 15px 0;
+    /* margin: 0 0 15px 0; */
 }
 .btn-login{
     display: flex;
@@ -40,14 +40,6 @@
 }
 
 @media only screen and (max-width:500px) {
-    .login .form{
-        height: 50vh;
-        width: 50vw;
-        background-color: rgb(92, 92, 133);
-        padding: 20pxpx;
-        border-radius: 10px;
-        color: white;
-    }
-    
+   
 }
 /* "proxy": "http://localhost:4002", */
