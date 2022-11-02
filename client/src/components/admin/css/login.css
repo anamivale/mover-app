@@ -38,3 +38,15 @@
 .form label{
     margin-left: 15px;
 }
+
+@media only screen and (max-width:500px) {
+    .login .form{
+        height: 50vh;
+        width: 50vw;
+        background-color: rgb(92, 92, 133);
+        padding: 20pxpx;
+        border-radius: 10px;
+        color: white;
+    }
+    
+}
