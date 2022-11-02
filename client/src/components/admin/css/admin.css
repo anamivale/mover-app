@@ -24,27 +24,26 @@ li{
 
 }
 .orders  {
-flex: 1;
-height: 100px;
+height: 130px;
 width: 200px;
-margin-right: 10px;
+margin: 0 10px 10px 0;
 background: rgb(206, 145, 31);
 padding: 50px;}
 .trucks{
     padding: 50px;
-    margin-right: 10px;
+    margin: 0 10px 10px 0;
     background: rgb(206, 145, 31);
-    height: 100px;
+    height: 130px;
     width: 200px;
     
 
 }
 .admin-comments{
     padding: 50px;
-    margin-right: 10px;
+    margin: 0 10px 10px 0;
     background: rgb(206, 145, 31);
     width: 200px;
-    height: 100px;
+    height: 130px;
     
 }
 
@@ -76,4 +75,17 @@ margin-left: 20vw;
     text-align: center;
     padding: 50px 0;
     border: 1px solid white;
+}
+
+@media only screen and (max-width:700px) {
+    .interface{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: calc(100vw - 230px);
+        justify-content: space-between;
+    
+    
+    }
+    
 }

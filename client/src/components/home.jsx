@@ -100,10 +100,11 @@ function Home() {
       </div>
       <div className="feedback">
         <h1>Leave your comment</h1>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="home-form">
           <input
             type="text"
             placeholder="name"
+            className="input"
             value={name}
             onChange={(e) => {
               setName(e.target.value)
@@ -112,6 +113,7 @@ function Home() {
           <br />
           <input
             type="email"
+            className="input"
             placeholder="enter your email"
             value={email}
             onChange={(e) => {

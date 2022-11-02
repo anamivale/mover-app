@@ -38,13 +38,20 @@ function Login() {
       <form className="form" onSubmit={handleSubmit}>
         <label htmlFor="email">Email</label>
         <br />
-        <input type="email" id="email" value={email} onChange={handleEmail} />
+        <input
+          type="email"
+          className="lgn-input"
+          id="email"
+          value={email}
+          onChange={handleEmail}
+        />
         <br />
         <label htmlFor="password">Password</label>
         <br />
         <input
           type="password"
           id="password"
+          className="lgn-input"
           value={password}
           onChange={handlePassword}
         />

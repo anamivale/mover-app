@@ -85,12 +85,12 @@ button{
 .logo{
     font-size: x-large;
 }
-form > input{
+.home-form > .input{
     margin-bottom: 10px;
     width: 200px;
 
 }
-form{
+.home-form{
 margin-bottom: 50px;
 padding: 20px;
 }

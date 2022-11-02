@@ -55,23 +55,48 @@ function Order() {
       <h1>complete your order</h1>
       <form onSubmit={submit}>
         <label htmlFor="name">Name</label> <br />
-        <input type="text" value={name} onChange={handeleName} />
+        <input
+          className="od-input"
+          type="text"
+          value={name}
+          onChange={handeleName}
+        />
         <br />
         <label htmlFor="contact">Contact</label>
         <br />
-        <input type="contact" value={contact} onChange={handeleContact} />
+        <input
+          className="od-input"
+          type="contact"
+          value={contact}
+          onChange={handeleContact}
+        />
         <br />
         <label htmlFor="name">Email</label>
         <br />
-        <input type="email" value={email} onChange={handeleEmail} />
+        <input
+          className="od-input"
+          type="email"
+          value={email}
+          onChange={handeleEmail}
+        />
         <br />
         <label htmlFor="from">From: </label>
         <br />
-        <input type="text " value={From} onChange={handleFrom} />
+        <input
+          className="od-input"
+          type="text "
+          value={From}
+          onChange={handleFrom}
+        />
         <br />
         <label htmlFor="from">To: </label>
         <br />
-        <input type="text " value={To} onChange={handeleTo} />
+        <input
+          className="od-input"
+          type="text "
+          value={To}
+          onChange={handeleTo}
+        />
         <br />
         <label htmlFor="from">Type of oder </label>
         <br />
