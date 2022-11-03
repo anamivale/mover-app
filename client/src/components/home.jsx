@@ -52,7 +52,7 @@ function Home() {
           <a href="#contact" className="link">
             Contact
           </a>
-          <a href="#services" className="link">
+          <a href="#services" className="link" style={{ marginRight: "40px" }}>
             Services
           </a>
         </div>
