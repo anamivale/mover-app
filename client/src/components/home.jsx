@@ -142,7 +142,8 @@ function Home() {
         <h1 className="about">Contact Us</h1>
         <div className="contact">
           <p>
-            Email: muhembelev@gmail.com <br /> contact:+254797936562
+            Location: kisumu <br /> Email: muhembelev@gmail.com <br />{" "}
+            contact:+254797936562
           </p>
           <p>
             Email: muhembelev@gmail.com <br /> contact:+254797936562
