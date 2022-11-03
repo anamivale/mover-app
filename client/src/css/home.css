@@ -46,7 +46,7 @@ body{
     justify-content: space-around;
 }
 .img{
-    background-image: url('../images/truck1.png');
+    background-image: url('../images/background.jpg');
     background-position: center;
     background-size: cover;
     width: 70vw;
@@ -60,13 +60,8 @@ p{
     font-size: 15px;
 
 }
-.service{
-    display: flex;
-}
-.pkg2{
-    max-width: 100%;
-    max-height: 100%;
-}
+
+
 
 img{
     height: 300px;
@@ -79,11 +74,12 @@ button{
     /* width: 100vw; */
    /* text-align: center; */
    font-size:22px;
-   font-style: italic;
    font-weight: 100;
 }
 .logo{
-    font-size: x-large;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 5px;
 }
 .home-form > .input{
     margin-bottom: 10px;
