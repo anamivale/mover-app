@@ -2,6 +2,8 @@ import React from "react"
 import { useState } from "react"
 import axios from "axios"
 import "../css/order.css"
+import { faBackward } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { NavLink } from "react-router-dom"
 
 function Order() {
@@ -51,68 +53,71 @@ function Order() {
       })
   }
   return (
-    <div>
-      <h1>complete your order</h1>
-      <form onSubmit={submit}>
-        <label htmlFor="name">Name</label> <br />
-        <input
-          className="od-input"
-          type="text"
-          value={name}
-          onChange={handeleName}
-        />
-        <br />
-        <label htmlFor="contact">Contact</label>
-        <br />
-        <input
-          className="od-input"
-          type="contact"
-          value={contact}
-          onChange={handeleContact}
-        />
-        <br />
-        <label htmlFor="name">Email</label>
-        <br />
-        <input
-          className="od-input"
-          type="email"
-          value={email}
-          onChange={handeleEmail}
-        />
-        <br />
-        <label htmlFor="from">From: </label>
-        <br />
-        <input
-          className="od-input"
-          type="text "
-          value={From}
-          onChange={handleFrom}
-        />
-        <br />
-        <label htmlFor="from">To: </label>
-        <br />
-        <input
-          className="od-input"
-          type="text "
-          value={To}
-          onChange={handeleTo}
-        />
-        <br />
-        <label htmlFor="from">Type of oder </label>
-        <br />
-        <select name="" id="" onChange={handelOder}>
-          <option value="">choose your Order</option>
-          <option>type 1- 3000/=</option>
-          <option>type2 - 6000/=</option>
-        </select>
-        <br />
-        <br />
-        <button>submit</button>
-      </form>
-      <NavLink to="/" className="link">
+    <div className="order-main">
+      <NavLink to="/" className="order-link">
+        <FontAwesomeIcon icon={faBackward} />
         <button className="back">Back</button>
         {/* add an icon and increase the size  */}
       </NavLink>
+      <div className="order-page">
+        <form onSubmit={submit}>
+          <h1>complete your order</h1>
+          <label htmlFor="name">Name</label> <br />
+          <input
+            className="od-input"
+            type="text"
+            value={name}
+            onChange={handeleName}
+          />
+          <br />
+          <label htmlFor="contact">Contact</label>
+          <br />
+          <input
+            className="od-input"
+            type="contact"
+            value={contact}
+            onChange={handeleContact}
+          />
+          <br />
+          <label htmlFor="name">Email</label>
+          <br />
+          <input
+            className="od-input"
+            type="email"
+            value={email}
+            onChange={handeleEmail}
+          />
+          <br />
+          <label htmlFor="from">From: </label>
+          <br />
+          <input
+            className="od-input"
+            type="text "
+            value={From}
+            onChange={handleFrom}
+          />
+          <br />
+          <label htmlFor="from">To: </label>
+          <br />
+          <input
+            className="od-input"
+            type="text "
+            value={To}
+            onChange={handeleTo}
+          />
+          <br />
+          <label htmlFor="from">Type of oder </label>
+          <br />
+          <select name="" id="" onChange={handelOder}>
+            <option value="">choose your Order</option>
+            <option>type 1- 3000/=</option>
+            <option>type2 - 6000/=</option>
+          </select>
+          <br />
+          <br />
+          <button className="btn-submit">submit</button>
+        </form>
+      </div>
     </div>
   )
 }

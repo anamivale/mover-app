@@ -2,21 +2,23 @@
 nav{
     display: flex;
     justify-content: center;
+    align-items: center;
     color: white;
-    color: blueviolet;
+    background-color: blueviolet;
     width: 97vw;
+    height: 93px;
 }
 .link{
-    margin-left: 10px;
+    margin-left: 80px;
+    margin-right: 20px;
     text-decoration: none;
+    color: white;
+    margin-top: 50px;
+}
+.link:active{
+    text-decoration: underline;
     color: blue;
 }
-h1{
-    font-size: 20px;
-    margin-top: 0;
-    
-}
-
 textarea{
     height: 100px;
     width: 200px;
@@ -49,9 +51,9 @@ body{
     background-image: url('../images/background.jpg');
     background-position: center;
     background-size: cover;
-    width: 70vw;
+    width: 100vw;
     height: 80vh;
-    margin: 10px 50px 10px 100px;
+    /* margin: 10px 50px 10px 100px; */
 }
 .service-title{
     text-align: center;
@@ -97,10 +99,22 @@ padding: 20px;
 
     text-align: center;
 }
+.size{
+    width: 50vw;
+    margin-left: 50px;
+    align-items: center;
+}
 .btn-order{
     padding: 10px 40px;
-    margin-left: 35vw;
+    margin-left: 30vw;
     border-radius: 20px;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+}
+.svc{
+    display: flex;
+     justify-content: space-between
 }
 @media only screen and (max-width: 700px) {
     *{
@@ -119,13 +133,9 @@ padding: 20px;
         text-align: left;
         font-size: x-large;
     }
-    .logo{
-        font-size: x-large;
-        margin: 0;
-        padding: 0;
-    }
+    
     .img{
-        background-image: url('../images/truck1.png');
+        background-image: url('../images/background.jpg');
        height: 300px;
        width: 300px;
        margin: 0;
@@ -155,7 +165,29 @@ padding: 20px;
     .feedback{
         text-align: left;
     }
+    .svc{
+        display: block;
+    }
     
+    .link{
+        margin-left: 0;
+        margin-right: 5px;
+        text-decoration: none;
+        color: blue;
+    }
+    .btn-order{
+        padding: 10px;
+        margin-left: 35px;
+        border-radius: 20px;
+        background-color: red;
+        color: white;
+        font-size: 15px;
+    }
+    .size{
+        width: 100%;
+        margin-left: 20px;
+        align-items: center;
+    }
 }
 
 

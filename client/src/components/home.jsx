@@ -1,5 +1,5 @@
 import React from "react"
-import Track1 from "../images/truck1.png"
+import Track7 from "../images/1300.jpg"
 import HOmeTruck from "../images/sizes.jpg"
 import Track2 from "../images/1000-100.jpg"
 import Track3 from "../images/1300-100.jpg"
@@ -59,8 +59,8 @@ function Home() {
       </nav>
       <div>
         <h1 className="slogun">
-          Enjoy reliable moving with Easy Movers. <br /> Save time, move easy
-          and fast!!!
+          Enjoy reliable moving with Easy Movers. Save time, move easy and
+          fast!!!
         </h1>
         <div className="img"></div>
       </div>
@@ -83,70 +83,79 @@ function Home() {
         <h1 className="service-title">Services Offered</h1>
         <div className="size">
           <figure>
-            <img src={HOmeTruck} alt="truck" />
+            <img src={HOmeTruck} alt="truck" className="size" />
           </figure>
         </div>
         <div className="service">
-          <div className="pkg1">
-            <figure>
-              <img src={Track2} alt="" />
-              <figcaption>
-                {" "}
-                14 by 22 m3 truck @ kshs:1000 for every 100m
-              </figcaption>
-            </figure>
+          <div className="svc">
+            <div className="pkg1">
+              <figure>
+                <img src={Track2} alt="" />
+                <figcaption>
+                  {" "}
+                  14 by 22 m3 truck @ kshs:1000 for every 100m
+                </figcaption>
+              </figure>
+            </div>
+            <div className="pkg2">
+              <figure>
+                <img src={Track3} alt="" />
+                <figcaption>
+                  {" "}
+                  22 by 32 m3 truck @ kshs:1300 for every 100m{" "}
+                </figcaption>
+              </figure>
+            </div>
           </div>
-          <div className="pkg2">
-            <figure>
-              <img src={Track3} alt="" />
-              <figcaption>
-                {" "}
-                22 by 32 m3 truck @ kshs:1300 for every 100m{" "}
-              </figcaption>
-            </figure>
+          <div className="svc">
+            <div className="pkg2">
+              <figure>
+                <img src={Track4} alt="" />
+                <figcaption>
+                  {" "}
+                  40 by 59 m3 truck @ kshs:2000 for every 100m{" "}
+                </figcaption>
+              </figure>
+            </div>
+            <div className="pkg2">
+              <figure>
+                <img src={Track5} alt="" />
+                <figcaption>
+                  {" "}
+                  32 by 40 m3 truck @ kshs:1700 for every 100m{" "}
+                </figcaption>
+              </figure>
+            </div>
           </div>
-          <div className="pkg2">
-            <figure>
-              <img src={Track4} alt="" />
-              <figcaption>
-                {" "}
-                40 by 59 m3 truck @ kshs:2000 for every 100m{" "}
-              </figcaption>
-            </figure>
-          </div>
-          <div className="pkg2">
-            <figure>
-              <img src={Track5} alt="" />
-              <figcaption>
-                {" "}
-                32 by 40 m3 truck @ kshs:1700 for every 100m{" "}
-              </figcaption>
-            </figure>
-          </div>
-          <div className="pkg2">
-            <figure>
-              <img src={Track6} alt="" />
-              <figcaption>
-                {" "}
-                Tripper truck @ kshs 3500 for one trip + kshs 2000 for any extra
-                trip
-              </figcaption>
-            </figure>
+          <div className="svc">
+            <div className="pkg2">
+              <figure>
+                <img src={Track6} alt="" />
+                <figcaption>
+                  {" "}
+                  Tripper truck @ kshs 3500 for one trip + kshs 2000 for any
+                  extra trip
+                </figcaption>
+              </figure>
+            </div>
+            <div className="pkg2">
+              <figure>
+                <img src={Track7} alt="" />
+                <figcaption> Heavy load lifting at kshs 1500 per</figcaption>
+              </figure>
+            </div>
           </div>
         </div>
         <NavLink to="/order" className="link">
-          <button className="btn-order">Order</button>
+          <button className="btn-order">Make your order</button>
         </NavLink>
       </div>
       <div id="contact">
         <h1 className="about">Contact Us</h1>
         <div className="contact">
           <p>
-            Location: kisumu <br /> Email: muhembelev@gmail.com <br />{" "}
-            contact:+254797936562
-          </p>
-          <p>
-            Email: muhembelev@gmail.com <br /> contact:+254797936562
+            <strong>Location:</strong> kisumu <br /> <strong>Email:</strong>{" "}
+            muhembelev@gmail.com <br /> <strong>contact:</strong>+254797936562
           </p>
         </div>
       </div>
