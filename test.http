@@ -1,15 +1,13 @@
-# POST   http://localhost:4002/order
+# POST   http://localhost:4002/user
 # Content-Type: application/json
 
 # {
 #     "name":"mercy anami",
-#     "contact":"038585",
-#     "From":"bffn",
+#     "password":"12345",
 #     "email":"mercy@gmail.com",
-#     "To":"kffk",
-#     "typeOfOder":"4"
-
+#     "contact":"038500080005"
 # }
+
 # GET  http://localhost:4002/comments
 
 # POST  http://localhost:4002/comment

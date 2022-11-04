@@ -20,11 +20,6 @@ const User = mongoose.Schema(
       type: String,
       required: true,
       unique: true,
-      validate(value) {
-        if (!validator.isEmail(value)) {
-          throw new Error("email is invalid")
-        }
-      },
     },
     contact: {
       type: Number,

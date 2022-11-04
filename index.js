@@ -12,9 +12,17 @@ app.use(json())
 app.use(cors())
 dotenv.config()
 
-mongoose.connect(process.env.MONGODB_URI || process.env.url, () => {
-  console.log("db connected")
-})
+mongoose
+  .connect(process.env.MONGODB_URI || process.env.url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("Connected to the database ")
+  })
+  .catch((err) => {
+    console.error(`Error connecting to the database. n${err}`)
+  })
 
 const port = process.env.PORT || 4002
 if (process.env.NODE_ENV === "production") {
