@@ -24,7 +24,7 @@ mongoose
     console.error(`Error connecting to the database. n${err}`)
   })
 
-const port = process.env.PORT || 4002
+const port = process.env.PORT || process.env.port
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"))
 
