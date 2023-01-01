@@ -3,11 +3,26 @@ import React from "react"
 import { useState } from "react"
 import { useEffect } from "react"
 import "./css/comments.css"
+import { useNavigate } from "react-router-dom"
+import jwt from "jwt-decode"
 
 function Comments() {
   const [comments, setComments] = useState([])
+  const navigate = useNavigate()
+
   useEffect(() => {
-    getComments()
+    const token = localStorage.getItem("token")
+    if (token) {
+      const user = jwt(token)
+
+      if (user) {
+        getComments()
+      } else {
+        navigate("/login")
+      }
+    } else {
+      navigate("/login")
+    }
   }, [])
 
   const getComments = () => {

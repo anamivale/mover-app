@@ -26,7 +26,13 @@ function Login() {
         },
       }
       axios.post("http://localhost:4002/login", user, config).then((res) => {
-        navigate("/admin")
+        if (res.data.user) {
+          localStorage.setItem("token", res.data.user)
+          navigate("/admin")
+        } else {
+          alert("please check your credentials")
+          navigate("/login")
+        }
       })
     } catch (error) {
       console.log(error.message)

@@ -3,12 +3,7 @@ const User = require("../models/user")
 const jwt = require("jsonwebtoken")
 const bcrypt = require("bcrypt")
 
-router.get("/", (req, res) => {
-  res.send("first route")
-})
-
 router.post("/user", async (req, res) => {
-  const { name, email, contact } = req.body
   try {
     const bpass = (await bcrypt.hash(req.body.password, 10)).toString()
     const user = new User({
@@ -18,10 +13,8 @@ router.post("/user", async (req, res) => {
       contact: req.body.contact,
     })
     await user.save()
-    const token = jwt.sign({ email }, process.env.sec, {
-      expiresIn: "1h",
-    })
-    res.status(200).json({ name, contact, token })
+
+    res.json({ status: "ok" })
   } catch (error) {
     res.status(500).json(error.message)
   }
@@ -34,17 +27,19 @@ router.post("/login", async (req, res) => {
     if (!user) throw new Error("user no found")
     const pwd = await bcrypt.compare(password, user.password)
     if (!pwd) throw new Error("wrong password")
+    const name = user.name
     const token = jwt.sign(
       {
         email,
         pwd,
+        name,
       },
       process.env.sec,
       { expiresIn: "1h" }
     )
-    res.status(200).json({ email, token })
+    res.json({ status: "ok", user: token })
   } catch (err) {
-    res.status(500).json(err.message)
+    res.json({ user: false })
   }
 })
 

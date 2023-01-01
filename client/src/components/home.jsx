@@ -93,7 +93,7 @@ function Home() {
                 <img src={Track2} alt="" />
                 <figcaption>
                   {" "}
-                  14 by 22 m3 truck @ kshs:1000 for every 100m
+                  14 by 22 m3 truck @ kshs:1000 for every Kilometre
                 </figcaption>
               </figure>
             </div>
@@ -102,7 +102,7 @@ function Home() {
                 <img src={Track3} alt="" />
                 <figcaption>
                   {" "}
-                  22 by 32 m3 truck @ kshs:1300 for every 100m{" "}
+                  22 by 32 m3 truck @ kshs:1300 for every Kilometre{" "}
                 </figcaption>
               </figure>
             </div>
@@ -113,7 +113,7 @@ function Home() {
                 <img src={Track4} alt="" />
                 <figcaption>
                   {" "}
-                  40 by 59 m3 truck @ kshs:2000 for every 100m{" "}
+                  40 by 59 m3 truck @ kshs:2000 for every Kilometre{" "}
                 </figcaption>
               </figure>
             </div>
@@ -122,7 +122,7 @@ function Home() {
                 <img src={Track5} alt="" />
                 <figcaption>
                   {" "}
-                  32 by 40 m3 truck @ kshs:1700 for every 100m{" "}
+                  32 by 40 m3 truck @ kshs:1700 for every Kilometre{" "}
                 </figcaption>
               </figure>
             </div>
@@ -141,7 +141,10 @@ function Home() {
             <div className="pkg2">
               <figure>
                 <img src={Track7} alt="" />
-                <figcaption> Heavy load lifting at kshs 1500 per</figcaption>
+                <figcaption>
+                  {" "}
+                  Heavy load lifting at kshs 1500 per tone
+                </figcaption>
               </figure>
             </div>
           </div>

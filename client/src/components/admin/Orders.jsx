@@ -1,11 +1,25 @@
 import axios from "axios"
 import React from "react"
 import { useState, useEffect } from "react"
-
+import { useNavigate } from "react-router-dom"
+import jwt from "jwt-decode"
 function Orders() {
   const [oders, setOders] = useState([])
+  const navigate = useNavigate()
+
   useEffect(() => {
-    getOrders()
+    const token = localStorage.getItem("token")
+    if (token) {
+      const user = jwt(token)
+
+      if (user) {
+        getOrders()
+      } else {
+        navigate("/login")
+      }
+    } else {
+      navigate("/login")
+    }
   }, [])
 
   const getOrders = () => {
