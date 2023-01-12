@@ -22,5 +22,14 @@ route.get("/comments", async (req, res) => {
     res.status(500).json(error.message)
   }
 })
+route.delete("/deletecomment", async (req, res) => {
+  try {
+    const cmnt = await Comments.findOneAndRemove(req.body.id)
+    res.status(200).json(cmnt)
+  } catch (err) {
+    res.status(500).json(err.message)
+    console.log(err.message)
+  }
+})
 
 module.exports = route

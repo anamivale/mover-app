@@ -10,11 +10,18 @@
 
 # GET  http://localhost:4002/comments
 
-POST  http://localhost:4002/comment
+# POST  http://localhost:4002/comment
+# Content-Type: application/json
+
+# {
+#     "name":"valeria muhembele",
+#     "email":"muhembe@gmail.com",
+#     "comment":"I got no feedback on my request please. try to respond to me"
+# }
+
+DELETE http://localhost:4002/deletecomment
 Content-Type: application/json
 
 {
-    "name":"valeria muhembele",
-    "email":"muhembe@gmail.com",
-    "comment":"I got no feedback on my request please. try to respond to me"
+    "id":"634490e1a30876d73352c09d"
 }

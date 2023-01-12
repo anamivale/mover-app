@@ -41,7 +41,9 @@ function Comments() {
       {comments.map((comments) => {
         return (
           <div className=" comment">
-            <span className="comments-name">{comments.name}</span>
+            <span className="comments-name">
+              {comments.name.charAt(0).toUpperCase() + comments.name.slice(1)}
+            </span>
             <span>({comments.email})</span>
 
             <p>{comments.comment}</p>
