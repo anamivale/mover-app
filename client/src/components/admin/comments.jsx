@@ -39,10 +39,14 @@ function Comments() {
       <h1 className="h1">Comments</h1>
 
       {comments.map((comments) => {
+        const space = comments.name.indexOf(" ") + 1
         return (
           <div className=" comment">
             <span className="comments-name">
-              {comments.name.charAt(0).toUpperCase() + comments.name.slice(1)}
+              {comments.name.charAt(0).toUpperCase() +
+                comments.name.slice(1, space) +
+                comments.name.charAt(space).toUpperCase() +
+                comments.name.slice(space + 1)}
             </span>
             <span>({comments.email})</span>
 
